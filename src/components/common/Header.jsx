@@ -5,12 +5,17 @@ export const Header = () => {
     return (
         <>
             <header>
-                <nav>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                    </ul>
-                </nav>
+                <div className="header">
+                    <div className='logo'>
+                        <Link to="/">
+                            <h1>BirdBirdmurmur</h1>
+                        </Link>
+                    </div>
+                    <div className='menu'>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                    </div>
+                </div>
             </header>
         </>
     )
