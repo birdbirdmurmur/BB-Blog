@@ -13,6 +13,13 @@ body {
 
 a {
     text-decoration: none;
+    color: #333333;
+    letter-spacing: 0.8px;
+    transition: 0.42s;
+}
+
+a:hover {
+    color: #999999;
 }
 
 /* ---------- Header ---------- */
@@ -30,11 +37,6 @@ a {
     padding: 5px;
 }
 
-.logo a {
-    color: #333;
-    letter-spacing: 0.8px;
-}
-
 .menu {
     width: 420px;
     display: flex;
@@ -42,10 +44,21 @@ a {
     align-items: center;
     padding: 5px;
 }
-
-.menu a {
-    color: #88888888;
-    padding: 10px 20px;
-    letter-spacing: 0.8px;
-}
 /* ---------- Header ---------- */
+
+/* ---------- Home ---------- */
+.home {
+    display: flex;
+    width: 100%;
+    height: 88vh;
+    border: 1px solid #000;
+}
+
+.homeContainer {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+/* ---------- Home ---------- */
