@@ -4,14 +4,22 @@ import { useState, useEffect } from 'react'
 export const Home = () => {
     const [render, setRender] = useState(true)
 
+    /* ------每5s從AB之間切換------ */
     useEffect(() => {
         const interval = setInterval(() => {
-            // setRender(false);
             setRender(prevState => !prevState);
         }, 5000);
 
         return () => clearTimeout(interval);
     }, [])
+    /* ------先渲染A，5s之後渲染B------ */
+    /*useEffect(() => {
+        const timer = setTimeout(() => {
+            setRender(false);
+        }, 5000);
+
+        return () => clearTimeout(timer);
+    }, [])*/
 
     return (
         <>
