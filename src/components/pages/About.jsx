@@ -5,7 +5,7 @@ import BirdBird from '../data/images/Avatar.jpg'
 export const About = () => {
     return (
         <>
-            <Avatar alt="BirdBird" src={BirdBird} />
+            <Avatar alt="BirdBird" src={BirdBird} sx={{ width: 100, height: 100 }} />
         </>
     )
 }
