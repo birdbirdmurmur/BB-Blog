@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
-import BirdBird from '../../../public/Avatar.jpg'
+import BirdBird from '../data/images/Avatar.jpg'
 
 export const About = () => {
     return (
