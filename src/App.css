@@ -64,6 +64,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 16px;
     }
 
     .nav {
@@ -88,6 +89,7 @@ header {
         display: block;
         background: none;
         cursor: pointer;
+        color: #333;
         font-size: 36px;
     }
 
