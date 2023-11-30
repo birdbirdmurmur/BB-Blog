@@ -15,6 +15,7 @@ export const Header = () => {
                     </div>
                     <div className={responsive ? 'hideMenu' : 'nav'}>
                         <Link to="/">Home</Link>
+                        <Link to="/projects">Projects</Link>
                         <Link to="/about">About</Link>
                     </div>
                     <button className='toggle' onClick={() => setResponsive(!responsive)}>

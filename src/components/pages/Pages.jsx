@@ -4,9 +4,10 @@ import {
     Switch,
     Route
 } from 'react-router-dom'
+import { Header } from '../common/Header'
 import { Home } from '../home/Home'
 import { About } from './About'
-import { Header } from '../common/Header'
+import { Projects } from './Projects'
 
 export const Pages = () => {
     return (
@@ -16,6 +17,7 @@ export const Pages = () => {
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/about' component={About} />
+                    <Route exact path='/projects' component={Projects} />
                 </Switch>
             </Router>
         </>
