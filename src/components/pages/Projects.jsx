@@ -5,7 +5,7 @@ export const Projects = () => {
         <>
             <section className='projects'>
                 <div className='projectCard'>
-                    <img src="https://picsum.photos/300/200/">
+                    <img src="https://picsum.photos/300/200?random=1">
                     </img>
                     <div className='info'>
                         <h3>ShoppingCart</h3>
@@ -19,7 +19,7 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='projectCard'>
-                    <img src="https://picsum.photos/300/200/">
+                    <img src="https://picsum.photos/300/200?random=2">
                     </img>
                     <div className='info'>
                         <h3>TodoList</h3>
