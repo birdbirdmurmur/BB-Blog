@@ -8,6 +8,7 @@ import { Header } from '../common/Header'
 import { Home } from '../home/Home'
 import { About } from './About'
 import { Projects } from './Projects'
+import { Footer } from '../common/Footer'
 
 export const Pages = () => {
     return (
@@ -19,6 +20,7 @@ export const Pages = () => {
                     <Route exact path='/about' component={About} />
                     <Route exact path='/projects' component={Projects} />
                 </Switch>
+                <Footer />
             </Router>
         </>
     )
