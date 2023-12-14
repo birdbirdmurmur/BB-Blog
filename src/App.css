@@ -111,72 +111,55 @@ section.home {
     line-height: 1.5;
     color: #333;
 }
+
 /* ---------- Home ---------- */
 
 /* ---------- Projects ---------- */
 section.projects {
-    justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
     margin: 0 auto;
+    height: auto;
+    min-height: 80vh;
 }
 
-.projectCard {
-    width: 30%;
-    /* 剩下10%自動分配 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-
-    background-color: #dddd;
-    border-radius: 28px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.projectCard img {
-    width: 80%;
-    height: 80%;
-    margin: 16px auto;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.projectCard h3 {
-    margin: 10px 0;
-    letter-spacing: 1px;
-}
-
-.projectCard p {
-    max-width: 300px;
-    max-height: 3em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
-.projectCard ul {
+.project-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 16px 0;
-    letter-spacing: 0.8px;
-    max-width: 300px;
+    gap: 30px;
 }
 
-.projectCard li {
-    list-style: none;
-    width: 72px;
-    margin: 6px 8px;
-    padding: 7px;
-    background-color: #B0C4DE;
-    color: #333;
-    border-radius: 5px;
+.project-card {
+    background-color: #d6d6d6;
+    border-radius: 16px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s ease;
+    /* overflow: hidden; */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
 }
 
 /* ---------- Projects ---------- */
@@ -187,8 +170,8 @@ section.about {
     align-items: center;
 }
 
-.personal-card{
-    /* outline: 1px solid #999; */
+
+.personal-card {
     width: 300px;
     height: 600px;
     display: flex;
@@ -197,8 +180,8 @@ section.about {
     flex-direction: column;
 }
 
-
-.personal-card p, .personal-card h2{
+.personal-card p,
+.personal-card h2 {
     margin: 10px 0;
 }
 
@@ -230,4 +213,5 @@ section.about {
         max-width: 100%;
     }
 }
+
 /* ---------- Footer ---------- */
